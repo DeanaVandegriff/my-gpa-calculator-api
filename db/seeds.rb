@@ -22,4 +22,6 @@
 
 # User.create!(name: "Tori Scott", email: "toriscott@example.com", password: "bayside")
 
-Course.create!()
+# Course.create!(name: "Algebra 1", grade: "B", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "", grade: "", credits: , level: "", semester_taken: "", user_id: "1")
