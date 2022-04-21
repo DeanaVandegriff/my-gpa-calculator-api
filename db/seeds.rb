@@ -8,14 +8,18 @@
 
 # User.create!(name: "Zack Morris", email: "zackmorris@example.com", password: "bayside")
 
-User.create!(name: "Kelly Kapowski", email: "kellykapowski@example.com", password: "bayside")
+# User.create!(name: "Kelly Kapowski", email: "kellykapowski@example.com", password: "bayside")
 
-User.create!(name: "A.C. Slater", email: "acslater@example.com", password: "bayside")
+# User.create!(name: "A.C. Slater", email: "acslater@example.com", password: "bayside")
 
-User.create!(name: "Jessie Spano", email: "jessiespano@example.com", password: "bayside")
+# User.create!(name: "Jessie Spano", email: "jessiespano@example.com", password: "bayside")
 
-User.create!(name: "Screech Powers", email: "screechpowers@example.com", password: "bayside")
+# User.create!(name: "Screech Powers", email: "screechpowers@example.com", password: "bayside")
 
-User.create!(name: "Lisa Turtle", email: "lisaturtle@example.com", password: "bayside")
+# User.create!(name: "Lisa Turtle", email: "lisaturtle@example.com", password: "bayside")
 
-User.create!(name: "Richard Belding", email: "theprincipal@example.com", password: "bayside")
+# User.create!(name: "Richard Belding", email: "theprincipal@example.com", password: "bayside")
+
+# User.create!(name: "Tori Scott", email: "toriscott@example.com", password: "bayside")
+
+Course.create!()
