@@ -6,4 +6,10 @@ Rails.application.routes.draw do
 
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
+
+  get "/courses" => "courses#index"
+  get "/courses/:id" => "courses#show"
+  post "/courses" => "courses#create"
+  patch "/courses/:id" => "courses#update"
+  delete "/courses/:id" => "courses#delete"
 end
