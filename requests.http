@@ -35,6 +35,11 @@ Content-Type: application/json
 ### Course Index
 GET http://localhost:3000/courses.json
 
+
+### Course Show
+GET http://localhost:3000/courses/1.json 
+
+
 ### Course Update
 
 PATCH http://localhost:3000/courses/15.json

@@ -17,6 +17,11 @@ class CoursesController < ApplicationController
     render json: course.as_json
   end
 
+  def show
+    course = Course.find_by(id: params[:id])
+    render json: course.as_json
+  end
+  
   def update
     course = Course.find_by(id: params[:id])
     course.name = params[:name] || course.name
