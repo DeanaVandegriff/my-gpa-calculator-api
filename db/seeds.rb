@@ -24,4 +24,28 @@
 
 # Course.create!(name: "Algebra 1", grade: "B", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester One", user_id: "1")
 
-# Course.create!(name: "", grade: "", credits: , level: "", semester_taken: "", user_id: "1")
+# Course.create!(name: "Algebra 1", grade: "B-", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "English 9", grade: "A", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "English 9", grade: "A", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "Biology", grade: "C+", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Biology", grade: "C", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "French 1", grade: "B-", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "French 1", grade: "B", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "Ancient History", grade: "D", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Health", grade: "C-", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "Intro to Art", grade: "B", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Intro to Business", grade: "A+", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "P.E.", grade: "A+", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Intro to Coding", grade: "A-", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester Two", user_id: "1")
