@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get "/courses/:id" => "courses#show"
   post "/courses" => "courses#create"
   patch "/courses/:id" => "courses#update"
-  delete "/courses/:id" => "courses#delete"
+  delete "/courses/:id" => "courses#destroy"
 end

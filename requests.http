@@ -24,9 +24,26 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTEzNDQ3M
 Content-Type: application/json
 
 {
-  "name": "", 
-  "grade": "", 
+  "name": "Geometry", 
+  "grade": "B", 
   "credits": 0.5, 
-  "level": "traditional", "semester_taken": "?th Grade: Semester ???", 
+  "level": "traditional", 
+  "semester_taken": "10th Grade: Semester One", 
   "user_id": 1
 }
+
+### Course Index
+GET http://localhost:3000/courses.json
+
+### Course Update
+
+PATCH http://localhost:3000/courses/15.json
+Content-Type: application/json
+
+{
+  "name": "Geometry", 
+  "grade": "B+"
+}
+
+### Course Removal
+DELETE http://localhost:3000/courses/15.json
