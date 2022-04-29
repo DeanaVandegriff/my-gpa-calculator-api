@@ -17,3 +17,16 @@ Content-Type: application/json
   "email": "zackmorris@example.com",
   "password": "bayside"
 }
+
+### Course create
+POST http://localhost:3000/courses.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTEzNDQ3MzJ9.X8jFHMyd3uhvPUoOTXdhS_yyx7GHUmKWZCNUh6-QX2c
+Content-Type: application/json
+
+{
+  "name": "", 
+  "grade": "", 
+  "credits": 0.5, 
+  "level": "traditional", "semester_taken": "?th Grade: Semester ???", 
+  "user_id": 1
+}
