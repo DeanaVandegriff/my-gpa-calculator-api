@@ -1,10 +1,12 @@
+@jwt = 
+
 ### Users create (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Violet Bickerstaff",
-  "email": "vbickerstaff@example.com",
+  "name": "Amanda Hale",
+  "email": "ahale@example.com",
   "password": "bayside",
   "password_confirmation": "bayside"
 }
@@ -20,7 +22,7 @@ Content-Type: application/json
 
 ### Course create
 POST http://localhost:3000/courses.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE5NDA1ODR9.FUjXpZyrp1iItDKGKDSQj_NZdsSFQZrrXlXs4ggIIgk
+Authorization: Bearer {{ jwt }}
 Content-Type: application/json
 
 {
@@ -28,23 +30,25 @@ Content-Type: application/json
   "grade": "B", 
   "credits": 0.5, 
   "level": "traditional", 
-  "semester_taken": "10th Grade: Semester Two", 
+  "semester_taken": "12th Grade: Semester Two", 
   "user_id": 1
 }
 
 ### Course Index
 GET http://localhost:3000/courses.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE5NDA1ODR9.FUjXpZyrp1iItDKGKDSQj_NZdsSFQZrrXlXs4ggIIgk
+Authorization: Bearer {{ jwt }}
 Content-Type: application/json
 
 
 ### Course Show
 GET http://localhost:3000/courses/1.json 
-
+Authorization: Bearer {{ jwt }}
+Content-Type: application/json
 
 ### Course Update
 
-PATCH http://localhost:3000/courses/16.json
+PATCH http://localhost:3000/courses/17.json
+Authorization: Bearer {{ jwt }}
 Content-Type: application/json
 
 {
@@ -53,4 +57,6 @@ Content-Type: application/json
 }
 
 ### Course Removal
-DELETE http://localhost:3000/courses/16.json
+DELETE http://localhost:3000/courses/17.json
+Authorization: Bearer {{ jwt }}
+Content-Type: application/json
