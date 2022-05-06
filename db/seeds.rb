@@ -49,3 +49,31 @@
 # Course.create!(name: "P.E.", grade: "A+", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester One", user_id: "1")
 
 # Course.create!(name: "Intro to Coding", grade: "A-", credits: 0.5, level: "traditional", semester_taken: "9th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "Geometry", grade: "A", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Geometry", grade: "A", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "English 10", grade: "A", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "English 10", grade: "A", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "Chemistry", grade: "C-", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Chemistry", grade: "C", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "French 2", grade: "B", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "French 2", grade: "B+", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "World History", grade: "B", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "World History", grade: "B", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "Watercolor", grade: "C-", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Marketing", grade: "A+", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "Male Fitness", grade: "A+", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Website Design", grade: "B", credits: 0.5, level: "traditional", semester_taken: "10th Grade: Semester Two", user_id: "1")

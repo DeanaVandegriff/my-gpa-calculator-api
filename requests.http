@@ -3,8 +3,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Tori Scott",
-  "email": "toriscott@example.com",
+  "name": "Violet Bickerstaff",
+  "email": "vbickerstaff@example.com",
   "password": "bayside",
   "password_confirmation": "bayside"
 }
@@ -20,7 +20,7 @@ Content-Type: application/json
 
 ### Course create
 POST http://localhost:3000/courses.json
-Authorization: Bearer 
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE5NDA1ODR9.FUjXpZyrp1iItDKGKDSQj_NZdsSFQZrrXlXs4ggIIgk
 Content-Type: application/json
 
 {
@@ -28,12 +28,14 @@ Content-Type: application/json
   "grade": "B", 
   "credits": 0.5, 
   "level": "traditional", 
-  "semester_taken": "10th Grade: Semester One", 
+  "semester_taken": "10th Grade: Semester Two", 
   "user_id": 1
 }
 
 ### Course Index
 GET http://localhost:3000/courses.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE5NDA1ODR9.FUjXpZyrp1iItDKGKDSQj_NZdsSFQZrrXlXs4ggIIgk
+Content-Type: application/json
 
 
 ### Course Show
@@ -42,7 +44,7 @@ GET http://localhost:3000/courses/1.json
 
 ### Course Update
 
-PATCH http://localhost:3000/courses/15.json
+PATCH http://localhost:3000/courses/16.json
 Content-Type: application/json
 
 {
@@ -51,4 +53,4 @@ Content-Type: application/json
 }
 
 ### Course Removal
-DELETE http://localhost:3000/courses/15.json
+DELETE http://localhost:3000/courses/16.json
