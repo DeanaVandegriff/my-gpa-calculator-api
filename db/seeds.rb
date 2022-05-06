@@ -106,14 +106,30 @@
 
 # Course.create!(name: "Intro to Network Design", grade: "B", credits: 0.5, level: "traditional", semester_taken: "11th Grade: Semester Two", user_id: "1")
 
-Course.create!(name: "Precalculus", grade: "B", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester One", user_id: "1")
+# Course.create!(name: "Precalculus", grade: "B", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester One", user_id: "1")
 
-Course.create!(name: "Precalculus", grade: "B", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester Two", user_id: "1")
+# Course.create!(name: "Precalculus", grade: "B", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester Two", user_id: "1")
 
-Course.create!(name: "English 12", grade: "A", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester One", user_id: "1")
+# Course.create!(name: "English 12", grade: "A", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester One", user_id: "1")
 
-Course.create!(name: "English 12", grade: "A", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester Two", user_id: "1")
+# Course.create!(name: "English 12", grade: "A", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester Two", user_id: "1")
 
-Course.create!(name: "Human Anatomy", grade: "C", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester One", user_id: "1")
+# Course.create!(name: "Human Anatomy", grade: "C", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester One", user_id: "1")
 
-Course.create!(name: "Human Anatomy", grade: "C", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester Two", user_id: "1")
+# Course.create!(name: "Human Anatomy", grade: "C", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "French 4", grade: "B", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "French 4", grade: "B", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "American Government", grade: "C", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Race and Culture", grade: "A", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "Entrepreneurship", grade: "B", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Entreprenuership", grade: "B", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester Two", user_id: "1")
+
+# Course.create!(name: "Drama 2", grade: "A", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester One", user_id: "1")
+
+# Course.create!(name: "Advanced Coding", grade: "C", credits: 0.5, level: "traditional", semester_taken: "12th Grade: Semester Two", user_id: "1")
