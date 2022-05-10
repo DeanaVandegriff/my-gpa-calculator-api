@@ -2,8 +2,12 @@ class CoursesController < ApplicationController
   before_action :authenticate_user
 
   def index
-    courses = Course.all
-    render json: courses.as_json
+    if current_user
+      courses = current_user.courses
+      render json: courses.as_json
+    else
+      render json: [], status: :unauthorized
+    end
   end
 
   def create
