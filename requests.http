@@ -41,7 +41,7 @@ Content-Type: application/json
 
 
 ### Course Show
-GET http://localhost:3000/courses/1.json 
+GET http://localhost:3000/courses/60.json 
 Authorization: Bearer {{ jwt }}
 Content-Type: application/json
 

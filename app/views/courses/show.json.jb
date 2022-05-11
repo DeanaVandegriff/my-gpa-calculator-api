@@ -1,0 +1,11 @@
+{
+  id: @course.id,
+  name: @course.name,
+  grade: @course.grade,
+  credits: @course.credits,
+  level: @course.level,
+  semester_taken: @course.semester_taken,
+  point_value: @course.point_value,
+  created_at: @course.created_at,
+  updated_at: @course.updated_at
+}

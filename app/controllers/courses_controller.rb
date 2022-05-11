@@ -4,40 +4,46 @@ class CoursesController < ApplicationController
   def index
     if current_user
       courses = current_user.courses
-      render json: courses.as_json
+      render :index
     else
       render json: [], status: :unauthorized
     end
   end
 
   def create
-    course = Course.new(
+    @course = Course.new(
       name: params[:name],
       grade: params[:grade],
       credits: params[:credits],
       level: params[:level],
       semester_taken: params[:semester_taken],
       user_id: current_user.id,
-      point_value: calculated_point_value
+      point_value: point_value,
     )
-    course.save
-    render json: course.as_json
+    if @course.save
+      render :show
+    else
+      render json: { errors: @course.errors.full_messages }, status: 422
+    end
   end
 
   def show
-    course = Course.find_by(id: params[:id])
-    render json: course.as_json
+    @course = Course.find_by(id: params[:id])
+    render template: "courses/show"
   end
 
   def update
-    course = Course.find_by(id: params[:id])
-    course.name = params[:name] || course.name
-    course.grade = params[:grade] || course.grade
-    course.credits = params[:credits] || course.credits
-    course.level = params[:level] || course.level
-    course.semester_taken = params[:semester_taken] || course.semester_taken
-    course.save
-    render json: course.as_json
+    @course = Course.find_by(id: params[:id])
+    @course.name = params[:name] || course.name
+    @course.grade = params[:grade] || course.grade
+    @course.credits = params[:credits] || course.credits
+    @course.level = params[:level] || course.level
+    @course.semester_taken = params[:semester_taken] || course.semester_taken
+    if @course.save
+      render :show
+    else
+      render json: { errors: @course.errors.full_messages }, status: 422
+    end
   end
 
   def destroy

@@ -3,7 +3,7 @@ class Course < ApplicationRecord
 
   before_save :calculate_points
 
-  def calculate_points
+  def point_value
     @grades = {
       "A+" => 4.33,
       "A" => 4.00,
@@ -19,7 +19,7 @@ class Course < ApplicationRecord
       "D-" => 0.67,
       "F" => 0.00,
     }
-    point_value = @grades[grade] * @credits
-    self.point_value = calculated_point_value
+    @point_value = @grades[grade] * 0.5
+    self.point_value = point_value
   end
 end
