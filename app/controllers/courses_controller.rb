@@ -17,8 +17,7 @@ class CoursesController < ApplicationController
       credits: params[:credits],
       level: params[:level],
       semester_taken: params[:semester_taken],
-      user_id: current_user.id,
-      point_value: point_value,
+      user_id: current_user.id
     )
     if @course.save
       render :show
