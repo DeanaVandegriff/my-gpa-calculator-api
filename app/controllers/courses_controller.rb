@@ -18,6 +18,7 @@ class CoursesController < ApplicationController
       level: params[:level],
       semester_taken: params[:semester_taken],
       user_id: current_user.id,
+      point_value: calculated_point_value
     )
     course.save
     render json: course.as_json

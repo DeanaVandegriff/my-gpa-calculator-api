@@ -1,4 +1,4 @@
-@jwt = 
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NTIzODAzNzF9.mkKgd-8DfXLIU5xBsoqu63jUtT3HjW28kHgfPGZKthQ
 
 ### Users create (signup)
 POST http://localhost:3000/users.json
@@ -16,7 +16,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "zackmorris@example.com",
+  "email": "screechpowers@example.com",
   "password": "bayside"
 }
 
@@ -26,12 +26,12 @@ Authorization: Bearer {{ jwt }}
 Content-Type: application/json
 
 {
-  "name": "Geometry", 
+  "name": "English 9", 
   "grade": "B", 
   "credits": 0.5, 
   "level": "traditional", 
-  "semester_taken": "12th Grade: Semester Two", 
-  "user_id": 1
+  "semester_taken": "9th Grade: Semester One", 
+  "user_id": 5
 }
 
 ### Course Index
