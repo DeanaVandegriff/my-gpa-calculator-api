@@ -26,11 +26,11 @@ Authorization: Bearer {{ jwt }}
 Content-Type: application/json
 
 {
-  "name": "English 11", 
+  "name": "PreCalculus", 
   "grade": "B", 
   "credits": 0.5, 
-  "level": "AP", 
-  "semester_taken": "11th Grade: Semester Two", 
+  "level": "traditional", 
+  "semester_taken": "11th Grade: Semester One", 
   "user_id": 5
 }
 

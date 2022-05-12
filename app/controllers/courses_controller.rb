@@ -31,7 +31,7 @@ class CoursesController < ApplicationController
       "honors" => 0.5,
       "AP" => 1.0,
     }
-    calculated_point_value = (grades[params[:grade]] + level[params[:level]]) * params[:credits]
+    calculated_point_value = (grades[params[:grade]] + level[params[:level]]) * params[:credits].to_f
     @course = Course.new(
       name: params[:name],
       grade: params[:grade],
