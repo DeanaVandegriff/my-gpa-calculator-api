@@ -3,7 +3,7 @@ class CoursesController < ApplicationController
 
   def index
     if current_user
-      courses = current_user.courses
+      @courses = current_user.courses
       render :index
     else
       render json: [], status: :unauthorized
@@ -11,24 +11,43 @@ class CoursesController < ApplicationController
   end
 
   def create
+    grades = {
+      "A+" => 4.33,
+      "A" => 4.00,
+      "A-" => 3.67,
+      "B+" => 3.33,
+      "B" => 3.00,
+      "B-" => 2.67,
+      "C+" => 2.33,
+      "C" => 2.00,
+      "C-" => 1.67,
+      "D+" => 1.33,
+      "D" => 1.00,
+      "D-" => 0.67,
+      "F" => 0.00,
+    }
+    level = {
+      "traditional" => 0,
+      "honors" => 0.5,
+      "AP" => 1.0,
+    }
+    calculated_point_value = (grades[params[:grade]] + level[params[:level]]) * params[:credits]
     @course = Course.new(
       name: params[:name],
       grade: params[:grade],
       credits: params[:credits],
       level: params[:level],
       semester_taken: params[:semester_taken],
-      user_id: current_user.id
+      point_value: calculated_point_value,
+      user_id: current_user.id,
     )
-    if @course.save
-      render :show
-    else
-      render json: { errors: @course.errors.full_messages }, status: 422
-    end
+    @course.save
+    render :show
   end
 
   def show
     @course = Course.find_by(id: params[:id])
-    render template: "courses/show"
+    render :show
   end
 
   def update
@@ -38,6 +57,7 @@ class CoursesController < ApplicationController
     @course.credits = params[:credits] || course.credits
     @course.level = params[:level] || course.level
     @course.semester_taken = params[:semester_taken] || course.semester_taken
+    @course.point_value = params[:point_value] || course.point_value
     if @course.save
       render :show
     else

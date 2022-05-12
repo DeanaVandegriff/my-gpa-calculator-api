@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NTIzODcxNDN9.E6VzTRal7tJvAOv3_y7SpQKSh_tBmMucW9SNzlqt2OI
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NTI0NTE3MzV9.c1kc-mxeG8kPuIKf8mjEH-6-sIQ-cv9p8c_CYNnwhVc
 
 ### Users create (signup)
 POST http://localhost:3000/users.json
@@ -26,11 +26,11 @@ Authorization: Bearer {{ jwt }}
 Content-Type: application/json
 
 {
-  "name": "English 9", 
+  "name": "English 11", 
   "grade": "B", 
   "credits": 0.5, 
-  "level": "traditional", 
-  "semester_taken": "9th Grade: Semester One", 
+  "level": "AP", 
+  "semester_taken": "11th Grade: Semester Two", 
   "user_id": 5
 }
 
