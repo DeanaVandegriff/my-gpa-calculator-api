@@ -6,6 +6,6 @@
     credits: course.credits,
     level: course.level,
     semester_taken: course.semester_taken,
-    point_value: course.point_value   
+    point_value: course.point_value,
   }
 end
