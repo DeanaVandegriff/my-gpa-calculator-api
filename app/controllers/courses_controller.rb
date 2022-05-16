@@ -2,12 +2,6 @@ class CoursesController < ApplicationController
   before_action :authenticate_user
 
   def index
-    # @courses.each do
-    #   total_point_value += @point_value
-    # end
-    # grade_point_average = total_point_value / @point_value.size
-    # puts grade_point_average
-    # grade_point_average = current_user.courses.sum(:point_value) / current_user.courses.count
     if current_user
       @courses = current_user.courses
     else
