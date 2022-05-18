@@ -7,5 +7,6 @@
     level: course.level,
     semester_taken: course.semester_taken,
     point_value: course.point_value,
+    semester_conversion: course.semester_conversion,
   }
 end

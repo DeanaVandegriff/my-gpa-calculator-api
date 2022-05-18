@@ -3,7 +3,7 @@ class CoursesController < ApplicationController
 
   def index
     if current_user
-      @courses = current_user.courses
+      @courses = current_user.courses.sort_by(&:semester_conversion)
     else
       render json: [], status: :unauthorized
     end
